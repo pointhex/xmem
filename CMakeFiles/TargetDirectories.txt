@@ -1,0 +1,4 @@
+/home/artem/nir_mem/xmem-example-master/CMakeFiles/rebuild_cache.dir
+/home/artem/nir_mem/xmem-example-master/CMakeFiles/edit_cache.dir
+/home/artem/nir_mem/xmem-example-master/CMakeFiles/deploy.dir
+/home/artem/nir_mem/xmem-example-master/CMakeFiles/XMemTest.dir

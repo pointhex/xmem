@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/artem/nir_mem/xmem-example-master/src/main.c
+avr/io.h
+-
+stdio.h
+-
+common.h
+-
+util/delay.h
+-
+avr/wdt.h
+-
+
+/home/artem/nir_mem/xmem-example-master/src/my_xmem.c
+avr/io.h
+-
+stdio.h
+-
+common.h
+-
+util/delay.h
+-
+avr/wdt.h
+-
+
+/home/artem/nir_mem/xmem-example-master/src/stdio.c
+avr/io.h
+-
+stdio.h
+-
+stdlib.h
+-
+util/delay.h
+-
+util/setbaud.h
+-
+
+include/common.h
+

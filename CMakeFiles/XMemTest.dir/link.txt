@@ -1,0 +1,1 @@
+/usr/bin/avr-gcc   -mmcu=atmega1280 -DF_CPU=16000000 -Os   -Wl,-u,vfprintf -lprintf_flt -Wl,-u,vfscanf -lscanf_flt CMakeFiles/XMemTest.dir/src/stdio.c.obj CMakeFiles/XMemTest.dir/src/main.c.obj CMakeFiles/XMemTest.dir/src/my_xmem.c.obj  -o XMemTest -Wl,--gc-sections -Wl,--relax -mmcu=atmega1280 

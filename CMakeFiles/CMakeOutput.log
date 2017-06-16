@@ -1,0 +1,165 @@
+The target system is: Generic -  - avr
+The host system is: Linux - 4.4.0-79-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/avr-gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/artem/nir_mem/xmem-example-master/CMakeFiles/3.5.1/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bf1c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bf1c9.dir/build.make CMakeFiles/cmTC_bf1c9.dir/build
+make[1]: Entering directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf1c9.dir/testCCompiler.c.obj
+/usr/bin/avr-gcc     -o CMakeFiles/cmTC_bf1c9.dir/testCCompiler.c.obj   -c /home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_bf1c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf1c9.dir/link.txt --verbose=1
+/usr/bin/avr-gcc       CMakeFiles/cmTC_bf1c9.dir/testCCompiler.c.obj  -o cmTC_bf1c9 
+make[1]: Leaving directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7f4a9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7f4a9.dir/build.make CMakeFiles/cmTC_7f4a9.dir/build
+make[1]: Entering directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f4a9.dir/CMakeCCompilerABI.c.obj
+/usr/bin/avr-gcc     -o CMakeFiles/cmTC_7f4a9.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_7f4a9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f4a9.dir/link.txt --verbose=1
+/usr/bin/avr-gcc      -v CMakeFiles/cmTC_7f4a9.dir/CMakeCCompilerABI.c.obj  -o cmTC_7f4a9  
+Using built-in specs.
+Reading specs from /usr/lib/gcc/avr/4.9.2/device-specs/specs-avr2
+COLLECT_GCC=/usr/bin/avr-gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/avr/4.9.2/lto-wrapper
+Target: avr
+Configured with: ../src/configure -v --enable-languages=c,c++ --prefix=/usr/lib --infodir=/usr/share/info --mandir=/usr/share/man --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --enable-shared --with-system-zlib --enable-long-long --enable-nls --without-included-gettext --disable-libssp --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=avr CFLAGS='-g -O2 -fstack-protector-strong -Wformat ' CPPFLAGS=-D_FORTIFY_SOURCE=2 CXXFLAGS='-g -O2 -fstack-protector-strong -Wformat ' FCFLAGS='-g -O2 -fstack-protector-strong' FFLAGS='-g -O2 -fstack-protector-strong' GCJFLAGS='-g -O2 -fstack-protector-strong' LDFLAGS='-Wl,-Bsymbolic-functions -Wl,-z,relro' OBJCFLAGS='-g -O2 -fstack-protector-strong -Wformat ' OBJCXXFLAGS='-g -O2 -fstack-protector-strong -Wformat '
+Thread model: single
+gcc version 4.9.2 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/avr/4.9.2/:/usr/lib/gcc/avr/4.9.2/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/4.9.2/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/4.9.2/../../../avr/bin/
+LIBRARY_PATH=/usr/lib/gcc/avr/4.9.2/:/usr/lib/gcc/avr/4.9.2/../../../avr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7f4a9' '-specs=device-specs/specs-avr2'
+ /usr/lib/gcc/avr/4.9.2/collect2 -plugin /usr/lib/gcc/avr/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfobC7a.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_7f4a9 -L/usr/lib/gcc/avr/4.9.2 -L/usr/lib/gcc/avr/4.9.2/../../../avr/lib CMakeFiles/cmTC_7f4a9.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
+make[1]: Leaving directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(avr-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_7f4a9/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_7f4a9.dir/build.make CMakeFiles/cmTC_7f4a9.dir/build]
+  ignore line: [make[1]: Entering directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_7f4a9.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/avr-gcc     -o CMakeFiles/cmTC_7f4a9.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_7f4a9]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f4a9.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/avr-gcc      -v CMakeFiles/cmTC_7f4a9.dir/CMakeCCompilerABI.c.obj  -o cmTC_7f4a9  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/lib/gcc/avr/4.9.2/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=/usr/bin/avr-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/avr/4.9.2/lto-wrapper]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: ../src/configure -v --enable-languages=c,c++ --prefix=/usr/lib --infodir=/usr/share/info --mandir=/usr/share/man --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --enable-shared --with-system-zlib --enable-long-long --enable-nls --without-included-gettext --disable-libssp --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=avr CFLAGS='-g -O2 -fstack-protector-strong -Wformat ' CPPFLAGS=-D_FORTIFY_SOURCE=2 CXXFLAGS='-g -O2 -fstack-protector-strong -Wformat ' FCFLAGS='-g -O2 -fstack-protector-strong' FFLAGS='-g -O2 -fstack-protector-strong' GCJFLAGS='-g -O2 -fstack-protector-strong' LDFLAGS='-Wl,-Bsymbolic-functions -Wl,-z,relro' OBJCFLAGS='-g -O2 -fstack-protector-strong -Wformat ' OBJCXXFLAGS='-g -O2 -fstack-protector-strong -Wformat ']
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 4.9.2 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/avr/4.9.2/:/usr/lib/gcc/avr/4.9.2/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/4.9.2/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/4.9.2/../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/avr/4.9.2/:/usr/lib/gcc/avr/4.9.2/../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7f4a9' '-specs=device-specs/specs-avr2']
+  link line: [ /usr/lib/gcc/avr/4.9.2/collect2 -plugin /usr/lib/gcc/avr/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfobC7a.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_7f4a9 -L/usr/lib/gcc/avr/4.9.2 -L/usr/lib/gcc/avr/4.9.2/../../../avr/lib CMakeFiles/cmTC_7f4a9.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
+    arg [/usr/lib/gcc/avr/4.9.2/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/avr/4.9.2/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/avr/4.9.2/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccfobC7a.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_7f4a9] ==> ignore
+    arg [-L/usr/lib/gcc/avr/4.9.2] ==> dir [/usr/lib/gcc/avr/4.9.2]
+    arg [-L/usr/lib/gcc/avr/4.9.2/../../../avr/lib] ==> dir [/usr/lib/gcc/avr/4.9.2/../../../avr/lib]
+    arg [CMakeFiles/cmTC_7f4a9.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/avr/4.9.2] ==> [/usr/lib/gcc/avr/4.9.2]
+  collapse library dir [/usr/lib/gcc/avr/4.9.2/../../../avr/lib] ==> [/usr/lib/avr/lib]
+  implicit libs: [m;c]
+  implicit dirs: [/usr/lib/gcc/avr/4.9.2;/usr/lib/avr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e44ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e44ca.dir/build.make CMakeFiles/cmTC_e44ca.dir/build
+make[1]: Entering directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e44ca.dir/feature_tests.c.obj
+/usr/bin/avr-gcc    -std=c11 -o CMakeFiles/cmTC_e44ca.dir/feature_tests.c.obj   -c /home/artem/nir_mem/xmem-example-master/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e44ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e44ca.dir/link.txt --verbose=1
+/usr/bin/avr-gcc       CMakeFiles/cmTC_e44ca.dir/feature_tests.c.obj  -o cmTC_e44ca 
+make[1]: Leaving directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c3447/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3447.dir/build.make CMakeFiles/cmTC_c3447.dir/build
+make[1]: Entering directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3447.dir/feature_tests.c.obj
+/usr/bin/avr-gcc    -std=c99 -o CMakeFiles/cmTC_c3447.dir/feature_tests.c.obj   -c /home/artem/nir_mem/xmem-example-master/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c3447
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3447.dir/link.txt --verbose=1
+/usr/bin/avr-gcc       CMakeFiles/cmTC_c3447.dir/feature_tests.c.obj  -o cmTC_c3447 
+make[1]: Leaving directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8eafb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8eafb.dir/build.make CMakeFiles/cmTC_8eafb.dir/build
+make[1]: Entering directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8eafb.dir/feature_tests.c.obj
+/usr/bin/avr-gcc    -std=c90 -o CMakeFiles/cmTC_8eafb.dir/feature_tests.c.obj   -c /home/artem/nir_mem/xmem-example-master/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8eafb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8eafb.dir/link.txt --verbose=1
+/usr/bin/avr-gcc       CMakeFiles/cmTC_8eafb.dir/feature_tests.c.obj  -o cmTC_8eafb 
+make[1]: Leaving directory '/home/artem/nir_mem/xmem-example-master/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
