@@ -17,40 +17,29 @@ void spi_init()
 uint16_t spi_read()
 {
 	uint16_t miso = 0;
-	uint16_t mask = 0x01; // если надо начинать со старшего бита - заменить на 0x80
+	uint16_t mask = 0x8000; // если надо начинать со старшего бита - заменить на 0x80
 
-	PORTB |= (1 << CS);
-	int i = 0;
-	for( ; mask; mask <<= 1) { // если надо начинать со старшего бита - заменить на mask >>= 1;
-		PORTD &= ~(1 << SCK);
-		_delay_us(1);
-		asm("nop");
-		asm("nop");
-		asm("nop");
-		asm("nop");
+	PORTB &= ~(1 << CS);
+	for( ; mask; mask >>= 1) { // если надо начинать со старшего бита - заменить на mask >>= 1;
+		PORTD |= (1 << SCK);
 		asm("nop");
 		asm("nop");
 
 
-		if((PINB >> MISO) & 1 == 1) {
+		if ((PINB >> MISO) & 0x01) {
 			miso |= mask;
 		}
 		
-		PORTD |= 1 << SCK;
-		_delay_us(1);
-		asm("nop");
-		asm("nop");
-		asm("nop");
-		asm("nop");
+		PORTD &= ~(1 << SCK);
 		asm("nop");
 		asm("nop");
 
 
 	}
+	PORTD &= ~(1 << SCK);
 
-	PORTB &= ~(1 << CS);
-
-	return miso & 0x0FFF;
+	PORTB |= (1 << CS);
+	return (miso << 3) >> 4;
 }
 
 int main()
@@ -63,7 +52,7 @@ int main()
 	uint16_t failed_arr[255];
 	spi_init();
 	stdio_init();
-	//xmem_init();
+	xmem_init();
 
 	//memset(failed_arr, 0, 255);
 
@@ -86,7 +75,11 @@ int main()
 	//}
 
 	while(1) {
+		i++;
+		xmem_write(i, i);
+		printf("xmem_write(address:%#X, data:%#X)\n", i, i);
+		printf("xmem_read(address:%#X) = %#X\n", i, xmem_read(i));
 		printf("data_spi %u\n", spi_read() );
-		_delay_ms(1000);
+		_delay_ms(500);
 	}
 }
